@@ -23,4 +23,10 @@ public class RedisLockServiceImpl implements RedisLockService {
         return user.getName();
     }
 
+    @Override
+    public String syncLock(String path) {
+        log.info("path = {}", path);
+        return path;
+    }
+
 }

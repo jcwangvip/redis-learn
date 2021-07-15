@@ -10,4 +10,6 @@ import com.example.redislearn.dto.UserDTO;
 public interface RedisLockService {
 
     String saveUser(UserDTO user);
+
+    String syncLock(String path);
 }
