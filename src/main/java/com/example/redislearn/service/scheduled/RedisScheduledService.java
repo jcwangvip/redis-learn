@@ -28,7 +28,7 @@ public class RedisScheduledService {
     @Value("${server.port}")
     private String port;
 
-    @Scheduled(cron = "0 */1 * * * ?")
+//    @Scheduled(cron = "0 */1 * * * ?")
     public void testRedisScheduled() {
         String scheduleName = "test";
         try {
