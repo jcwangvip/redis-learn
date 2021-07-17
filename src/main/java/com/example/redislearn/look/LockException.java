@@ -1,5 +1,7 @@
 package com.example.redislearn.look;
 
+import lombok.Getter;
+
 /**
  * 类描述
  *
@@ -7,7 +9,8 @@ package com.example.redislearn.look;
  */
 public class LockException extends RuntimeException {
 
-    private Object[] args;
+    @Getter
+    private final Object[] args;
 
     public LockException(String msg, Object... args) {
         super(msg);
